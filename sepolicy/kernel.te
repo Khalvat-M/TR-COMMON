@@ -1,0 +1,6 @@
+allow kernel sysfs_display:dir relabelto;
+allow kernel sysfs_display:file relabelto;
+allow kernel sysfs_vibeamp:file relabelto;
+allow kernel self:capability net_admin;
+allow kernel audio_device:chr_file { open read write };
+

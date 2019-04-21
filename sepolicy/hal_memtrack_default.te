@@ -1,0 +1,2 @@
+allow hal_memtrack_default servicemanager:dir search;
+allow hal_memtrack_default servicemanager:file open;
