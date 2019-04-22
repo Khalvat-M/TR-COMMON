@@ -206,6 +206,10 @@ PRODUCT_PACKAGES += \
     init.sec.boot.sh \
     ueventd.qcom.rc
 
+# Touch features
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.samsung
+
 # Treble
 # Include vndk/vndk-sp/ll-ndk modules
 PRODUCT_PACKAGES += \
