@@ -148,9 +148,6 @@ PRODUCT_PACKAGES += \
     hwcomposer.apq8084 \
     memtrack.apq8084
 
-# Doze service
-PRODUCT_PACKAGES += \
-    SamsungDoze
 
 # Fingerprint sensor
 PRODUCT_PACKAGES += \
@@ -214,11 +211,6 @@ PRODUCT_PACKAGES += \
 # Include vndk/vndk-sp/ll-ndk modules
 PRODUCT_PACKAGES += \
     vndk_package
-
-# TimeKeep
-PRODUCT_PACKAGES += \
-    timekeep \
-    TimeKeep
 
 # Vendor security patch level
 PRODUCT_PROPERTY_OVERRIDES += \
