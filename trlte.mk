@@ -148,12 +148,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ValidityService
 
-ifeq ($(filter trlte trltecan trlteduos trltespr trltetmo trlteusc trltevzw trltexx,$(TARGET_DEVICE)),)
-# FlipFlap
-PRODUCT_PACKAGES += \
-    FlipFlap
-endif
-
 # IPv6 tethering
 PRODUCT_PACKAGES += \
     ebtables \
@@ -227,8 +221,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
-    $(LOCAL_PATH)/configs/filter_ie:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/filter_ie \
-    frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
+    $(LOCAL_PATH)/configs/filter_ie:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/filter_ie
 
 # Common apq8084
 $(call inherit-product, device/samsung/apq8084-common/apq8084.mk)
