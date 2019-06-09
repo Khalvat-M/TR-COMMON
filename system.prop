@@ -105,6 +105,29 @@ ro.build.shutdown_timeout=5
 # USB OTG interface
 persist.sys.isUsbOtgEnabled=true
 
+# Camera
+camera2.portability.force_api=1
+
+# Fingerprint
+fingerprint_enabled=1
+
+# logd
+ro.logd.auditd.dmesg=false
+
+# GPS
+persist.gps.qc_nlp_in_use=0
+ro.gps.agps_provider=1
+sys.qca1530=detect
+
+# Radio
+rild.libpath=/system/vendor/lib/libsec-ril.so
+ro.ril.telephony.qan_resp_strings=6
+ro.telephony.mms_data_profile=5
+persist.radio.add_power_save=1
+
+# UI thread scheduling
+sys.use_fifo_ui=1
+
 # Volte
 persist.vendor.radio.force_on_dc=true
 persist.radio.custom_ecc=1
