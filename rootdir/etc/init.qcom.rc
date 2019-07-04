@@ -93,6 +93,10 @@ on fs
     write /sys/kernel/boot_adsp/boot 1
     setprop qcom.audio.init complete
 
+    # Adaptive LMK
+    write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
+    write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 80640
+
 on post-fs
     # Increase max readahead size to 1024 KB
     write /sys/block/mmcblk0/queue/read_ahead_kb 1024
