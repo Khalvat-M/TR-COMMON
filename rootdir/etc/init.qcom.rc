@@ -604,7 +604,7 @@ on boot
 
     # Auto Brightness
     chown system system  /sys/class/backlight/panel/auto_brightness
-    chmod 0660 /sys/class/backlight/panel/auto_brightness
+    chmod 0664 /sys/class/backlight/panel/auto_brightness
 
     # LCD mdnie and panel work
     chown system system  /sys/class/mdnie/mdnie/lcdtype
@@ -665,10 +665,6 @@ on boot
     chmod 0660 /sys/class/lcd/panel/alpm
     chown system system /sys/class/lcd/panel/alpm_backlight
     chmod 0660 /sys/class/lcd/panel/alpm_backlight
-
-    # Auto Brightness
-    chown system system  /sys/class/backlight/panel/auto_brightness
-    chmod 0660 /sys/class/backlight/panel/auto_brightness
 
     # Permissions for TCON
     chown system system /sys/class/tcon/tcon/lux
