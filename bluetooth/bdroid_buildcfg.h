@@ -21,7 +21,7 @@
 #define BTM_DEF_LOCAL_NAME   "Samsung Note"
 
 #define BTA_DISABLE_DELAY 1000 /* in milliseconds */
-
+#define BTE_BLE_STACK_CONF_FILE "/etc/bluetooth/bt_stack.conf"
 #define BLE_VND_INCLUDED   TRUE     /* Enable WBS */
 #define BTIF_HF_WBS_PREFERRED TRUE  /* Use WBS    */
 

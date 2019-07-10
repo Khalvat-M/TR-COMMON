@@ -126,8 +126,12 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl \
-    android.hardware.bluetooth@1.0-service \
+    bt_stack.conf \
     libbt-vendor
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/bluetooth/btconfig/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf \
+    $(LOCAL_PATH)/bluetooth/btconfig/iop_bt.db:system/etc/bluetooth/iop_bt.db
 
 # Network
 PRODUCT_PACKAGES += \
