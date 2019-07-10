@@ -627,12 +627,6 @@ on boot
     chown radio system /sys/class/lcd/panel/siop_enable
     chown radio system /sys/class/lcd/panel/temperature
     chown radio system /sys/class/lcd/panel/tuning
-
-    chown system system /sys/class/lcd/panel/window_type
-    chown radio system /sys/class/lcd/panel/power_reduce
-    chown radio system /sys/class/lcd/panel/siop_enable
-    chown radio system /sys/class/lcd/panel/temperature
-    chown radio system /sys/class/lcd/panel/tuning
     chown radio system /sys/class/lcd/panel/lux
     chown system media_rw /sys/class/backlight/panel/weakness_hbm_comp
     chown system system /sys/class/lcd/panel/panel/auto_brightness
