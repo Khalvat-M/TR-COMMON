@@ -74,13 +74,11 @@ endif
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
+NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x02000000U
 
 # Lineagehw
 JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(DEVICE_PATH)/lineagehw|**/*.java
-
-# Fonts
-EXTENDED_FONT_FOOTPRINT := true
 
 # Encryption
 TARGET_KEYMASTER_SKIP_WAITING_FOR_QSEE := true
@@ -107,9 +105,6 @@ BOARD_SECOND_OFFSET      := 0x00f00000
 # NFC
 include $(DEVICE_PATH)/nfc/s3fwrn5/board.mk
 
-# Exclude serif fonts for saving system.img size.
-EXCLUDE_SERIF_FONTS := true
-
 # Use mke2fs to create ext4 images
 TARGET_USES_MKE2FS := true
 
@@ -118,9 +113,6 @@ TARGET_POWERHAL_SET_INTERACTIVE_EXT := $(DEVICE_PATH)/power/power_ext.c
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-
-# Exclude serif fonts for saving system.img size.
-EXCLUDE_SERIF_FONTS := true
 
 # Filesystem
 TARGET_HW_DISK_ENCRYPTION := false
@@ -186,9 +178,6 @@ TARGET_NO_SENSOR_PERMISSION_CHECK := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
-
-# HWUI
-HWUI_COMPILE_FOR_PERF := true
 
 # SELinux
 include device/qcom/sepolicy-legacy/sepolicy.mk

@@ -105,11 +105,6 @@ on post-fs
     chown system radio /sys/block/mmcblk0/bkops_en
     chmod 0664 /sys/block/mmcblk0/bkops_en
 
-    # Remove dalvik files that cause modem issues
-    rm /data/dalvik-cache/arm/system@framework@boot-telephony-common.art
-    rm /data/dalvik-cache/arm/system@framework@boot-telephony-common.vdex
-    rm /data/dalvik-cache/arm/system@framework@boot-telephony-common.oat
-
     # GPU
     write /sys/class/kgsl/kgsl-3d0/devfreq/min_freq 200000000
     write /sys/class/kgsl/kgsl-3d0/max_gpuclk 600000000
@@ -376,7 +371,7 @@ on post-fs-data
 
     chown system system /sys/class/flash/flash/flash_power
     chmod 660 /sys/class/flash/flash/flash_power
-    trigger enable-low-power
+
     setprop vold.post_fs_data_done 1
 
 on early-boot
@@ -917,17 +912,6 @@ on boot
     chown system radio /sys/class/sensors/bodytemp_sensor/name
     chown system radio /sys/class/sensors/bodytemp_sensor/raw_data
 
-    # Configure the cpu-boost module
-    write /sys/module/cpu_boost/parameters/input_boost 1
-    write /sys/module/msm_performance/parameters/touchboost 0
-
-
-    # SMP scheduler
-    write /proc/sys/kernel/sched_upmigrate 85
-    write /proc/sys/kernel/sched_downmigrate 85
-    write /proc/sys/kernel/sched_boost 1
-    write /proc/sys/kernel/sched_upmigrate_min_nice 19
-
     # BGM_sensor
     chown system radio /sys/class/sensors/bio_sensor/name
     chown system radio /sys/class/sensors/bio_sensor/vendor
@@ -1133,7 +1117,7 @@ on boot
 
     # Assign TCP buffer thresholds to be ceiling value of technology maximums
     # Increased technology maximums should be reflected here.
-    write /proc/sys/net/core/rmem_max  16777216
+    write /proc/sys/net/core/rmem_max  8388608
     write /proc/sys/net/core/wmem_max  8388608
 
     # HDCP 2.x
@@ -1350,9 +1334,6 @@ on property:sys.boot_completed=1
     chown system radio /sys/class/sec/sec_epen/epen_firm_version
     chown system radio /sys/class/sec/sec_epen/epen_delay_time
     chown system radio /sys/class/sec/sec_epen/boost_level
-
-    # Set idle GPU to 133 Mhz
-    write /sys/class/kgsl/kgsl-3d0/default_pwrlevel 7
 
     #Audience ES705 UART
     # Late chown to make sure the kernel can access the device
