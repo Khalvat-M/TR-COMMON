@@ -95,7 +95,7 @@ on fs
 
     # Adaptive LMK
     write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
-    write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 80640
+    write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 53059
 
 on post-fs
     # Increase max readahead size to 1024 KB
