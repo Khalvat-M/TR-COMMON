@@ -87,6 +87,7 @@ TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x02000000U
 
 # Allow creat folder
 BOARD_ROOT_EXTRA_FOLDERS := firmware firmware-modem efs
+BOARD_ROOT_EXTRA_SYMLINKS := /data/tombstones:/tombstones
 
 # Lineagehw
 JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(DEVICE_PATH)/lineagehw|**/*.java
