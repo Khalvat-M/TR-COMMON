@@ -192,19 +192,16 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-service.apq8084
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/gnss/gpsconfig/flp.conf:/system/etc/flp.conf \
-    $(LOCAL_PATH)/gnss/gpsconfig/gps.conf:/system/etc/gps.conf \
-    $(LOCAL_PATH)/gnss/gpsconfig/izat.conf:/system/etc/izat.conf \
-    $(LOCAL_PATH)/gnss/gpsconfig/sap.conf:/system/etc/sap.conf
+    $(LOCAL_PATH)/gnss/gpsconfig/flp.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/flp.conf \
+    $(LOCAL_PATH)/gnss/gpsconfig/gps.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/gps.conf \
+    $(LOCAL_PATH)/gnss/gpsconfig/izat.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/izat.conf \
+    $(LOCAL_PATH)/gnss/gpsconfig/sap.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/sap.conf \
+    $(LOCAL_PATH)/gnss/gpsconfig/sec_config:$(TARGET_COPY_OUT_SYSTEM)/etc/sec_config
 
 # IR Blaster
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     consumerir.apq8084
-
-# IRSC
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
 # Lights
 PRODUCT_PACKAGES += \
