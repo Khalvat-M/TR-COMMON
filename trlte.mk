@@ -165,11 +165,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ValidityService
 
-# IPv6 tethering
-PRODUCT_PACKAGES += \
-    ebtables \
-    ethertypes
-
 # LiveDisplay
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service.samsung-qcom
