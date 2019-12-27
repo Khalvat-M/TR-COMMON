@@ -210,8 +210,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-impl \
-    lights.APQ8084
+    android.hardware.light@2.0-service.samsung
 
 # Media
 PRODUCT_COPY_FILES += \
