@@ -51,6 +51,8 @@ debug.sf.enable_gl_backpressure=1
 persist.hwc.enable_vds=false
 sdm.perf_hint_window=50
 debug.hwui.renderer=opengl
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0
 
 # Memory optimizations
 ro.vendor.qti.sys.fw.bservice_enable=true
