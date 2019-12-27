@@ -1,6 +1,5 @@
 #
-# Copyright (C) 2015-2016 The CyanogenMod Project
-#           (C) 2017-2018 The LineageOS Project
+#           (C) 2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -328,7 +327,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # WiFi packages
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service \
+    android.hardware.wifi@1.0-service.legacy \
     libnetcmdiface \
     macloader \
     hostapd \
