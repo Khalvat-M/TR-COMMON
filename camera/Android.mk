@@ -15,6 +15,7 @@ LOCAL_SHARED_LIBRARIES := \
     libgui \
     libhidltransport \
     libutils \
+    libnativewindow \
     android.hidl.token@1.0-utils
 
 LOCAL_STATIC_LIBRARIES := \
