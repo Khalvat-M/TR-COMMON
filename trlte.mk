@@ -138,6 +138,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/bluetooth/btconfig/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf \
     $(LOCAL_PATH)/bluetooth/btconfig/iop_bt.db:system/etc/bluetooth/iop_bt.db
 
+
+# Doze
+PRODUCT_PACKAGES += \
+    SamsungDoze
+
 # Network
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
