@@ -244,7 +244,7 @@ on post-fs-data
     chmod 2770 /data/system/perfd
 
     # Create /data/time folder for time-services
-    mkdir /data/time/ 0700 system system
+    mkdir /data/time 0700 system system
 
     mkdir /data/bluetooth 0770 bluetooth bluetooth
     # Enable the setgid bit on the directory
