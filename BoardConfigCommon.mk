@@ -85,6 +85,9 @@ MAX_EGL_CACHE_SIZE := 2048*1024
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x02000000U
 
+# Allow creat folder
+BOARD_ROOT_EXTRA_FOLDERS := firmware firmware-modem efs
+
 # Lineagehw
 JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(DEVICE_PATH)/lineagehw|**/*.java
 
@@ -193,7 +196,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 # SELinux
 #include device/qcom/sepolicy-legacy/sepolicy.mk
 #BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
-    
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy_root   
 
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
