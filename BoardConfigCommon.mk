@@ -86,9 +86,6 @@ TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x2000U | 0x02000000U
 BOARD_ROOT_EXTRA_FOLDERS := firmware firmware-modem efs
 BOARD_ROOT_EXTRA_SYMLINKS := /data/tombstones:/tombstones
 
-# First Model API LEVEL
-PRODUCT_SHIPPING_API_LEVEL := 23
-
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 dwc3_msm.cpu_to_affin=1

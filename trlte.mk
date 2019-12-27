@@ -319,6 +319,9 @@ PRODUCT_PACKAGES += \
     init.sec.boot.sh \
     ueventd.qcom.rc
 
+# First Model API LEVEL
+PRODUCT_SHIPPING_API_LEVEL := 23
+
 # Touch features
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.samsung
