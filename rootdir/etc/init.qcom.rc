@@ -1,4 +1,4 @@
-# Copyright (c) 2009-2012, Code Aurora Forum. All rights reserved.
+# Copyright (c) 2020, Code Aurora Forum. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
@@ -1384,4 +1384,7 @@ on property:service.bootanim.exit=1
     write /proc/sys/net/ipv6/conf/rmnet_mhi2/accept_ra 2
     write /proc/sys/net/ipv6/conf/rmnet_mhi3/accept_ra 2
     write /proc/sys/net/ipv6/conf/rmnet_usb0/accept_ra 2
+
+on property:apexd.status=ready
+    mount none /system/etc/swcodec/ld.config.txt /apex/com.android.media.swcodec/etc/ld.config.txt bind
 
