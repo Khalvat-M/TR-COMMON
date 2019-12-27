@@ -1,6 +1,5 @@
 #
-# Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,6 +17,9 @@
 -include device/samsung/qcom-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/samsung/trlte-common
+
+# Allow overriding
+BUILD_BROKEN_DUP_RULES := true
 
 # Architecture
 TARGET_CPU_SMP := true
