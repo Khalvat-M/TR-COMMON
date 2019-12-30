@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- Copyright (c) 2014, The Linux Foundation. All rights reserved.         -->
+<!-- Copyright (c) 2020, The Linux Foundation. All rights reserved.         -->
 <!--                                                                        -->
 <!-- Redistribution and use in source and binary forms, with or without     -->
 <!-- modification, are permitted provided that the following conditions are -->
@@ -90,6 +90,7 @@
         <device name="SND_DEVICE_IN_VOICE_TTY_VCO_HANDSET_MIC" alias="TTY-vco-mic" />
         <device name="SND_DEVICE_IN_VOICE_TTY_HCO_HEADSET_MIC" alias="TTY-headset-mic" />
         <device name="SND_DEVICE_IN_VOICE_REC_MIC" alias="vr-main-mic" />
+        <device name="SND_DEVICE_IN_VOICE_REC_HEADSET_MIC" alias="vr-headset-mic" />
         <device name="SND_DEVICE_IN_VOICE_REC_MIC_NS" alias="svoice-NS-mic" />
         <device name="SND_DEVICE_IN_VOICE_REC_DMIC_STEREO" alias="vr-sub-mic" />
         <device name="SND_DEVICE_IN_HANDSET_STEREO_DMIC" alias="rec-stereo-mic" />
