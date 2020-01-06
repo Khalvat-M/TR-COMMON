@@ -127,10 +127,6 @@ TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE := true
 # Include path
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
-# Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_apq8084
-TARGET_RECOVERY_DEVICE_MODULES := libinit_apq8084
-
 # Extended Filesystem Support
 TARGET_EXFAT_DRIVER := sdfat
 
