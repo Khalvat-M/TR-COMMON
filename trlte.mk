@@ -317,7 +317,6 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.power.rc \
     init.qcom.usb.rc \
-    init.sec.boot.sh \
     ueventd.qcom.rc
 
 # First Model API LEVEL
