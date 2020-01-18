@@ -18,7 +18,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 
 # call common trlte system debug props
-$(call inherit-product, device/samsung/trlte-common/debug.mk)
+#$(call inherit-product, device/samsung/trlte-common/debug.mk)
 
 PRODUCT_CHARACTERISTICS := phone
 
