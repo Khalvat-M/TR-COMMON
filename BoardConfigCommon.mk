@@ -112,9 +112,6 @@ include $(DEVICE_PATH)/nfc/s3fwrn5/board.mk
 # Use mke2fs to create ext4 images
 TARGET_USES_MKE2FS := true
 
-# Power HAL
-TARGET_POWERHAL_SET_INTERACTIVE_EXT := $(DEVICE_PATH)/power/power_ext.c
-
 # Filesystem
 TARGET_HW_DISK_ENCRYPTION := false
 TARGET_HW_DISK_ENCRYPTION_PERF := false
