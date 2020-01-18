@@ -326,10 +326,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vndk_package
 
-# Vendor security patch level
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.lineage.build.vendor_security_patch=2017-08-01
-
 # WiFi packages
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service.legacy \
