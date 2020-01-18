@@ -4,10 +4,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
      dalvik.vm.dex2oat-swap=false \
      ro.vendor.qti.am.reschedule_service=true
 
-# AptX
-PRODUCT_PROPERTY_OVERRIDES += \
-     persist.bt.enableAptXHD=true
-
 # Allow tethering without provisioning app
 PRODUCT_PROPERTY_OVERRIDES += \
      net.tethering.noprovisioning=true
@@ -29,10 +25,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.audio.sdk.fluencetype=fluence \
     vendor.voice.path.for.pcm.voip=false \
     vendor.dedicated.device.for.voip=true
-
-# Burn-in protection
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.systemui.burn_in_protection=true
 
 # Dalvik heap
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -116,21 +108,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.shutdown_timeout=5
 
-# USB OTG interface
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.isUsbOtgEnabled=true
-
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     camera2.portability.force_api=1
-
-# Fingerprint
-PRODUCT_PROPERTY_OVERRIDES += \
-    fingerprint_enabled=1
-
-# logd
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.logd.auditd.dmesg=false
 
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -144,10 +124,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.telephony.qan_resp_strings=6 \
     ro.telephony.mms_data_profile=5 \
     persist.radio.add_power_save=1
-
-# UI thread scheduling
-PRODUCT_PROPERTY_OVERRIDES += \
-    sys.use_fifo_ui=1
 
 # Vendor security patch level
 PRODUCT_PROPERTY_OVERRIDES += \
