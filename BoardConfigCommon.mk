@@ -18,6 +18,9 @@
 
 DEVICE_PATH := device/samsung/trlte-common
 
+# Platform
+TARGET_BOARD_PLATFORM := apq8084
+
 # Allow overriding
 BUILD_BROKEN_DUP_RULES := true
 
@@ -143,9 +146,6 @@ TARGET_LD_SHIM_LIBS += \
 
 # Media
 TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
-
-# Platform
-TARGET_BOARD_PLATFORM := apq8084
 
 # Power HAL
 TARGET_POWERHAL_SET_INTERACTIVE_EXT := $(DEVICE_PATH)/power/power_ext.c
