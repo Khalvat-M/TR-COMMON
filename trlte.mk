@@ -166,11 +166,6 @@ PRODUCT_PACKAGES += \
     hwcomposer.apq8084 \
     memtrack.apq8084
 
-
-# Fingerprint sensor
-PRODUCT_PACKAGES += \
-    ValidityService
-
 # LiveDisplay
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service.samsung-qcom
