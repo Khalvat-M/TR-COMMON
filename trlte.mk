@@ -140,6 +140,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     SamsungDoze
 
+# Encryption
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
+
 # Network
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0

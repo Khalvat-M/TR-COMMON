@@ -109,9 +109,10 @@ include $(DEVICE_PATH)/nfc/s3fwrn5/board.mk
 # Use mke2fs to create ext4 images
 TARGET_USES_MKE2FS := true
 
+# Encryption
+TARGET_HW_DISK_ENCRYPTION := true
+
 # Filesystem
-TARGET_HW_DISK_ENCRYPTION := false
-TARGET_HW_DISK_ENCRYPTION_PERF := false
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # HIDL
