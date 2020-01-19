@@ -310,7 +310,6 @@ $(call inherit-product, device/samsung/trlte-common/nfc/s3fwrn5/product.mk)
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.qcom.rc \
-    init.qcom.power.rc \
     init.qcom.usb.rc \
     ueventd.qcom.rc
 
