@@ -246,10 +246,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service
 
-# Health
-PRODUCT_PACKAGES += \
-   android.hardware.health@2.0-service.samsung8084
-
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
